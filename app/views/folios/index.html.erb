@@ -1,0 +1,11 @@
+<h1>Portfolio Items</h1>
+
+<%= link_to "Create New Item", new_folio_path %>
+
+<% @folio_items.each do |folio_item| %>
+  <p><%= link_to folio_item.title, folio_path(folio_item) %></p>
+  <p><%= folio_item.subtitle %></p>
+  <p><%= folio_item.body %></p>
+  <p><%= image_tag folio_item.thumb_image unless folio_item.thumb_image.nil? %></p>
+  <%= link_to "Edit", edit_folio_path(folio_item) %>
+<% end %>
