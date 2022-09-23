@@ -39,4 +39,14 @@ class FoliosController < ApplicationController
     @folio_item = Folio.find(params[:id])
   end
 
+  def destroy
+    @folio_item = Folio.find(params[:id])
+
+    @folio_item.destroy
+
+    respond_to do |format|
+      format.html { redirect_to folios_url, notice: "Portfolio item was removed" }
+    end
+  end
+
 end

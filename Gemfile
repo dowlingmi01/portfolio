@@ -18,6 +18,7 @@ gem 'bootstrap', '~> 5.2.0'
 gem 'jquery-rails'
 gem 'bootstrap-sass', '~> 3.4', '>= 3.4.1' #for bootstrap styling/framework
 gem 'sassc-rails', '>= 2.1.0'
+gem 'friendly_id', '~> 5.4.0'
 
 
 
